@@ -34,11 +34,10 @@ process ID, and begins processing the subsequent pipelines (prompting if necessa
 ##I/O Redirection
 The following separators indicate that the subsequent word is the name of a file to which the command’s
 standard input, standard output, or standard error is redirected.
-< Redirect the standard input.
->, >& Redirect the standard output to a file. If file does not exist, it is created. If it does exist, it is overwritten
-and its previous contents are lost. The & form redirects both standard output and standard
+< Redirect the standard input. 
+* >, >& Redirect the standard output to a file. If file does not exist, it is created. If it does exist, it is overwritten and its previous contents are lost. The & form redirects both standard output and standard
 error to the file.
->>, >>&
+*>>, >>&
 Append the standard output. Like >, but places output at the end of the file rather than overwriting.
 The & form appends both standard output and standard error to the file.
 ##Command Execution
