@@ -60,18 +60,18 @@ except the last, it is executed in a subshell.
 *cd [dir] Change the working directory of the shell to dir, provided it is a directory and the shell has the
 appropriate permissions. Without an argument, it changes the working directory to the original
 (home) directory.
-*echo word ...
+* echo word ...
 Writes each word to the shell’s standard output, separated by spaces and terminated with a newline.
-*logout Exits the shell.
-*nice [[+/-]number] [command]
+* logout Exits the shell.
+* nice [[+/-]number] [command]
 Sets the scheduling priority for the shell to number, or, without number, to 4. With command,
 runs command at the appropriate priority. The greater the number, the less cpu the process gets.
 If no sign before the number, assume it is positive.
-*pwd Prints the current working directory.
-*setenv [VAR [word]]
+* pwd Prints the current working directory.
+* setenv [VAR [word]]
 Without arguments, prints the names and values of all environment variables. Given VAR, sets
 the environment variable VAR to word or, without word, to the null string.
-*unsetenv VAR
+* unsetenv VAR
 Removes environment variable whose name matches VAR.
-where command
+* where command
 Reports all known instances of command, including builtins and executables in path
